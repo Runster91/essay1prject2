@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='wood.css'>
+    
+</head>
+<body onload="readAll()">
+    <div class="container">
+        <div class="form_container">
+            <form class="create_form">
+                <input type="text" class="name" placeholder="Enter name" />
+                <input type="text" class="email" placeholder="Enter email" />
+                <button type="button" onclick="add()">Create</button>
+            </form>
+               
+            <form class="update_form">
+                <input type="text" hidden class="id" />
+                <input type="text" class="uname"/>
+                <input type="text" class="uemail"/>
+                <button type="button" onclick="update()" >update</button>
+            </form>
+            
+            <div class="add_div">
+                <button onclick="create()" >Add+</button>
+            </div>
+
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </thead>
+                <tbody class="data_table">
+
+                </tbody>   
+            </table>
+        </div>
+    </div>
+
+    <script src="wood.js"></script>
+</body>
+</html>
